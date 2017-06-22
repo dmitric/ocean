@@ -199,8 +199,8 @@ class App extends Component {
       .on("swipeup", ev => this.decrementDivisor())
       .on("swipeleft", ev => this.removeLine())
       .on("swiperight", ev => this.addLine())
-      .on("pinchin", ev => { this.incrementDivisor(); } )
-      .on("pinchout", ev => { this.decrementDivisor(); })
+      .on("pinchin", ev => this.incrementDivisor())
+      .on("pinchout", ev => this.decrementDivisor())
   }
 
   handleKeydown (ev) {
